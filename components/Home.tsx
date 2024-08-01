@@ -30,12 +30,12 @@ const phrases = [
                         Next.js | MERN Stack | DevOps
                       </div>
                       <div className="text-2xl mt-1 " id='change' >
-                      <div className="my-12 border-b text-center">
+                      <div className="my-1 border-b text-center">
                         <div className="leading-none px-2 inline-block text-sm text-gray-600 tracking-wide font-medium bg-white transform translate-y-1/2 dark:bg-slate-900 dark:text-white">
                             Intro
                         </div>
                     </div>
-                        <div className='mt-4 text-xl mx-10'>
+                        <div className='mt-10 leading-8 text-xl mx-4 md:mx-10 mb-4'>
                         Hi, I&apos;m Tushar Jamdade, a passionate computer engineering diploma holder with a drive for building innovative web solutions. Proficient in Next.js, React.js, Express.js, and Node.js, I craft seamless applications using both TypeScript and JavaScript. As I pursue my engineering degree, I’m eager to leverage my skills to create impactful and efficient digital experiences. Welcome to my portfolio!
                         </div>
                       </div>

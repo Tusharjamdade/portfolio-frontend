@@ -4,7 +4,7 @@ export default function Education() {
   return (
     <section className="min-h-screen dark:bg-black bg-white pt-10 border-b">
           <h3 className="dark:text-white dark:bg-black text-center text-2xl font-extrabold">TimeLine/Education</h3>
-        <ol className="relative border-s border-gray-200 dark:border-gray-700 mx-20 pt-10 mt-10">                  
+        <ol className="relative border-s border-gray-200 dark:border-gray-700 mx-20 pt-10 mt-10 mb-5 sm:mb-0">                  
         <li className="mb-10 ms-6">            
             <span className="absolute flex items-center justify-center w-6 h-6 bg-white rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-black">
                 <svg xmlns="http://www.w3.org/2000/svg"  className=" dark:text-white fill-current" viewBox="0 0 640 512">
