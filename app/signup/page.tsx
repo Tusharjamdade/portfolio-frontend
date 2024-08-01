@@ -1,6 +1,11 @@
+"use client"
+import {  signIn, useSession } from 'next-auth/react'
+import Link from 'next/link'
 import React from 'react'
 
 const page = () => {
+    const session = useSession()
+    console.log(session)
   return (
     <div className="min-h-screen bg-gray-100 text-gray-900 flex justify-center dark:bg-black">
     <div className="max-w-screen-xl m-0 sm:m-10 bg-white shadow sm:rounded-lg flex justify-center flex-1 dark:bg-slate-900 border ">
@@ -12,8 +17,10 @@ const page = () => {
             <div className="mt-12 flex flex-col items-center">
                 <div className="w-full flex-1 mt-2">
                     <div className="flex flex-col items-center">
-                        <button
-                            className="w-full max-w-xs font-bold shadow-sm rounded-lg py-3 bg-blue-100 hover:bg-blue-300 text-gray-800 flex items-center justify-center transition-all duration-300 ease-in-out focus:outline-none hover:shadow focus:shadow-sm focus:shadow-outline">
+                        <button onClick={async ()=>{
+                            signIn("google")
+                            // console.log(res)
+                            }} className="w-full max-w-xs font-bold shadow-sm rounded-lg py-3 bg-blue-100 hover:bg-blue-300 text-gray-800 flex items-center justify-center transition-all duration-300 ease-in-out focus:outline-none hover:shadow focus:shadow-sm focus:shadow-outline">
                             <div className="bg-white p-2 rounded-full">
                                 <svg className="w-4" viewBox="0 0 533.5 544.3">
                                     <path
@@ -34,7 +41,6 @@ const page = () => {
                                 Sign In with Google
                             </span>
                         </button>
-
                     </div>
 
                     <div className="my-12 border-b text-center">
@@ -53,8 +59,7 @@ const page = () => {
                         <input
                             className="w-full px-8 py-4 rounded-lg font-medium bg-gray-100 border border-gray-200 placeholder-gray-500 text-sm focus:outline-none focus:border-gray-400 focus:bg-white mt-5"
                             type="password" placeholder="Conform Password" />
-                        <button
-                            className="mt-5 tracking-wide font-semibold bg-blue-400 text-white-500 w-full py-4 rounded-lg hover:bg-blue-700 transition-all duration-300 ease-in-out flex items-center justify-center focus:shadow-outline focus:outline-none">
+                        <button  className="mt-5 tracking-wide font-semibold bg-blue-400 text-white-500 w-full py-4 rounded-lg hover:bg-blue-700 transition-all duration-300 ease-in-out flex items-center justify-center focus:shadow-outline focus:outline-none">
                             <svg className="w-6 h-6 -ml-2" fill="none" stroke="currentColor" strokeWidth="2"
                                 strokeLinecap="round" strokeLinejoin="round">
                                 <path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
@@ -65,6 +70,7 @@ const page = () => {
                                 Sign In
                             </span>
                         </button>
+                        <p className='text-black dark:text-white text-center mt-4'>Already have an account?<Link className='text-gray-500 dark:text-gray-400' href={"/signin"}> Sign in</Link> </p>
                         <p className="mt-6 text-xs text-gray-600 text-center dark:text-white">
                             I agree to abide by Cartesian Kinetics
                             <a href="#" className="border-b border-gray-500 border-dotted">

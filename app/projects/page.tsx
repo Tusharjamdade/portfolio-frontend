@@ -1,7 +1,8 @@
+import Link from "next/link"
 const page = () => {
   return (
     <div>
-      all projectss
+      <Link href={"#home_section"}>hi there</Link>
     </div>
   )
 }

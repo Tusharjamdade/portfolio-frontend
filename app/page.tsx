@@ -3,9 +3,62 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div>
-      
-    </div>
+    <section className="">
+        <section className="h-screen bg-white dark:bg-black dark:text-white border-b">
+            <div className="grid grid-cols-1 md:grid-cols-2">
+                <div className="flex justify-center items-center mt-4 md:mt-24">
+                  <img className="h-52 w-52 rounded-full md:h-80 md:w-80" src="/img.jpg" alt="Rounded avatar"/>
+                </div>
+                <div className="flex justify-center items-center">
+                    <div className="mt-6 md:mt-0">
+                      <div className="text-xl">
+                        ---Hello
+                      </div>
+                      <div className="text-2xl">
+                        i'm Tushar Jamdade
+                      </div>
+                      <div className="text-2xl">
+                        Next.js | MERN Stack | DevOps
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section className="min-h-screen dark:bg-black" id="projects">
+          <div className="flex justify-center items-center h-full flex-wrap">
+            <div>
+            <div className=" text-black dark:bg-black dark:text-white mt-20 text-lg font-extrabold text-center">Projects</div>
+          <div className="border max-w-sm rounded-lg overflow-hidden shadow-lg text-black dark:bg-black dark:text-white mt-10 mx-2 mb-4">
+            <img className="w-full" src="/portfolio-ss.png" alt="Sunset in the mountains"/>
+            <div className="px-6 py-4">
+              <div className="font-bold text-xl mb-2">PortFolio Website</div>
+              <p className="text-black text-base dark:text-white">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+              </p>
+            </div>
+            <div className="px-6 pt-4 pb-2">
+              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Next.js</span>
+              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Node.js</span>
+              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#TypeScript</span>
+            </div>
+          </div>
+
+
+
+
+          
+            </div>
+          
+          </div>
+        </section>
+        <section className="h-screen bg-blue-400">
+
+        </section>
+        <section className="h-screen bg-yellow-400">
+
+        </section>
+    </section>
+   
   );
 }
 

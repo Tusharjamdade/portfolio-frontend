@@ -1,7 +1,12 @@
+"use client"
 import { sign } from 'crypto'
+import Link from 'next/link'
+import { signIn, useSession } from 'next-auth/react'
 import React from 'react'
 
 const signin = () => {
+    const session = useSession()
+    console.log(session)
   return (
     <div className="min-h-screen bg-gray-100 text-gray-900 flex justify-center dark:bg-black">
     <div className="max-w-screen-xl m-0 sm:m-10 bg-white shadow sm:rounded-lg flex justify-center flex-1 dark:bg-slate-900 border ">
@@ -14,7 +19,7 @@ const signin = () => {
                 <div className="w-full flex-1 mt-2">
                     <div className="flex flex-col items-center">
                         <button onClick={()=>{
-                            
+                            signIn("google")
                         }} className="w-full max-w-xs font-bold shadow-sm rounded-lg py-3 bg-blue-100 hover:bg-blue-300 text-gray-800 flex items-center justify-center transition-all duration-300 ease-in-out focus:outline-none hover:shadow focus:shadow-sm focus:shadow-outline">
                             <div className="bg-white p-2 rounded-full">
                                 <svg className="w-4" viewBox="0 0 533.5 544.3">
@@ -64,6 +69,7 @@ const signin = () => {
                                 Sign In
                             </span>
                         </button>
+                        <p className='text-black dark:text-white text-center mt-4'>Don't have an account?<Link className='text-gray-500 dark:text-gray-400' href={"/signup"}> Sign up</Link> </p>
                         <p className="mt-6 text-xs text-gray-600 text-center dark:text-white">
                             I agree to abide by Cartesian Kinetics
                             <a href="#" className="border-b border-gray-500 border-dotted">
