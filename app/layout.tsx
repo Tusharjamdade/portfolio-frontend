@@ -17,8 +17,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={` font-serif	 dark`}>
+    <html lang="en" className="scroll-smooth focus:scroll-smooth">
+      <body className={` font-serif dark`}>
         <Navbar/>
         <AuthProvider>
         {children}
