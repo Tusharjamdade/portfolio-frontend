@@ -1,3 +1,5 @@
+import CommentSection from "@/components/CommentSection";
+import Dialogue from "@/components/Dialogue";
 import Education from "@/components/Education";
 import Home from "@/components/Home";
 import Navbar from "@/components/Navbar";
@@ -12,6 +14,8 @@ export default function HomePage() {
         <Projects/>
         <Education/>
         <Skills/>
+        <CommentSection/>
+        {/* <Dialogue/> */}
     </section>
    
   );
