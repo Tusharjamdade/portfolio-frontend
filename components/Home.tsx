@@ -1,4 +1,4 @@
-import Document from 'next/document';
+
 import Image from 'next/image'
 import React, { useRef } from 'react'
 
@@ -11,7 +11,6 @@ const phrases = [
   'creative endeavors',
   'professional work'
 ];
-
 
   return (
     <section className="h-screen bg-white dark:bg-black dark:text-white border-b" >
