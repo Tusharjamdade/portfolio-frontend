@@ -11,11 +11,11 @@
   "dependencies": {
     "@prisma/client": "^5.17.0",
     "auth0": "^4.7.0",
+    "axios": "^1.7.3",
     "next": "14.2.5",
     "next-auth": "^4.24.7",
     "passport": "^0.7.0",
     "passport-google-oauth20": "^2.0.0",
-    "prisma": "^5.17.0",
     "react": "^18",
     "react-dom": "^18"
   },
