@@ -1,7 +1,18 @@
+import Document from 'next/document';
 import Image from 'next/image'
-import React from 'react'
+import React, { useRef } from 'react'
 
 export default function Home() {
+  // Array of phrases to display
+const phrases = [
+  'portfolio',
+  'web development showcase',
+  'design projects',
+  'creative endeavors',
+  'professional work'
+];
+
+
   return (
     <section className="h-screen bg-white dark:bg-black dark:text-white border-b" >
             <div className="grid grid-cols-1 md:grid-cols-2">
@@ -13,10 +24,10 @@ export default function Home() {
                       <div className="text-xl">
                         ---Hello
                       </div>
-                      <div className="text-2xl">
+                      <div className="text-2xl mt-2">
                         I&apos;m Tushar Jamdade 
                       </div>
-                      <div className="text-2xl">
+                      <div className="text-2xl mt-4" id='change' >
                         Next.js | MERN Stack | DevOps
                       </div>
                     </div>

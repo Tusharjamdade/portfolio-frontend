@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Projects() {
   return (
-    <section className="min-h-screen dark:bg-black border-b" id="projects">
+    <section className="min-h-screen dark:bg-black border-b cursor-pointer" id="projects">
     <div className="flex justify-center items-center h-full flex-wrap">
       <div>
       <div className=" text-black dark:bg-black dark:text-white mt-20 text-2xl font-extrabold text-center">Projects</div>
