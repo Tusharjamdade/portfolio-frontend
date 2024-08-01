@@ -36,7 +36,7 @@ const phrases = [
                         </div>
                     </div>
                         <div className='mt-4 text-xl mx-10'>
-                        Hi, I'm Tushar Jamdade, a passionate computer engineering diploma holder with a drive for building innovative web solutions. Proficient in Next.js, React.js, Express.js, and Node.js, I craft seamless applications using both TypeScript and JavaScript. As I pursue my engineering degree, I’m eager to leverage my skills to create impactful and efficient digital experiences. Welcome to my portfolio!
+                        Hi, I&apos;m Tushar Jamdade, a passionate computer engineering diploma holder with a drive for building innovative web solutions. Proficient in Next.js, React.js, Express.js, and Node.js, I craft seamless applications using both TypeScript and JavaScript. As I pursue my engineering degree, I’m eager to leverage my skills to create impactful and efficient digital experiences. Welcome to my portfolio!
                         </div>
                       </div>
                     </div>
