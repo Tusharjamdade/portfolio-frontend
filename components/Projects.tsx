@@ -2,10 +2,10 @@ import React from 'react'
 
 export default function Projects() {
   return (
-    <section className="min-h-screen dark:bg-black" id="projects">
+    <section className="min-h-screen dark:bg-black border-b" id="projects">
     <div className="flex justify-center items-center h-full flex-wrap">
       <div>
-      <div className=" text-black dark:bg-black dark:text-white mt-20 text-lg font-extrabold text-center">Projects</div>
+      <div className=" text-black dark:bg-black dark:text-white mt-20 text-2xl font-extrabold text-center">Projects</div>
     <div className="border max-w-sm rounded-lg overflow-hidden shadow-lg text-black dark:bg-black dark:text-white mt-10 mx-2 mb-4">
       <img className="w-full" src="/portfolio-ss.png" alt="Sunset in the mountains"/>
       <div className="px-6 py-4">
