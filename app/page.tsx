@@ -3,7 +3,7 @@ import Navbar from "@/components/Navbar";
 import Projects from "@/components/Projects";
 import Image from "next/image";
 
-export default function() {
+export default function HomePage() {
   return (
     <section className="">
         <Home/>
