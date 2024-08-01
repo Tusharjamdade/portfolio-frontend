@@ -1,61 +1,56 @@
+import Home from "@/components/Home";
 import Navbar from "@/components/Navbar";
+import Projects from "@/components/Projects";
 import Image from "next/image";
 
-export default function Home() {
+export default function() {
   return (
     <section className="">
-        <section className="h-screen bg-white dark:bg-black dark:text-white border-b">
-            <div className="grid grid-cols-1 md:grid-cols-2">
-                <div className="flex justify-center items-center mt-4 md:mt-24">
-                  <Image width={500} height={500} className="h-52 w-52 rounded-full md:h-80 md:w-80" src="/img.jpg" alt="Rounded avatar"/>
-                </div>
-                <div className="flex justify-center items-center">
-                    <div className="mt-6 md:mt-0">
-                      <div className="text-xl">
-                        ---Hello
-                      </div>
-                      <div className="text-2xl">
-                        I&apos;m Tushar Jamdade 
-                      </div>
-                      <div className="text-2xl">
-                        Next.js | MERN Stack | DevOps
-                      </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section className="min-h-screen dark:bg-black" id="projects">
-          <div className="flex justify-center items-center h-full flex-wrap">
-            <div>
-            <div className=" text-black dark:bg-black dark:text-white mt-20 text-lg font-extrabold text-center">Projects</div>
-          <div className="border max-w-sm rounded-lg overflow-hidden shadow-lg text-black dark:bg-black dark:text-white mt-10 mx-2 mb-4">
-            <img className="w-full" src="/portfolio-ss.png" alt="Sunset in the mountains"/>
-            <div className="px-6 py-4">
-              <div className="font-bold text-xl mb-2">PortFolio Website</div>
-              <p className="text-black text-base dark:text-white">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-              </p>
-            </div>
-            <div className="px-6 pt-4 pb-2">
-              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Next.js</span>
-              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Node.js</span>
-              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#TypeScript</span>
-            </div>
-          </div>
-
-
-
-
+        <Home/>
+        <Projects/>
+        <section className="h-screen dark:bg-black bg-white ">
           
-            </div>
-          
-          </div>
-        </section>
-        <section className="h-screen bg-blue-400">
+    <ol className="relative border-s border-gray-200 dark:border-gray-700 mx-20">                  
+        <li className="mb-10 ms-6">            
+            <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+                <svg className="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
+                </svg>
+            </span>
+            <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">Flowbite Application UI v2.0.0 <span className="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 ms-3">Latest</span></h3>
+            <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released on January 13th, 2022</time>
+            <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.</p>
+            <a href="#" className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700"><svg className="w-3.5 h-3.5 me-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+        <path d="M14.707 7.793a1 1 0 0 0-1.414 0L11 10.086V1.5a1 1 0 0 0-2 0v8.586L6.707 7.793a1 1 0 1 0-1.414 1.414l4 4a1 1 0 0 0 1.416 0l4-4a1 1 0 0 0-.002-1.414Z"/>
+        <path d="M18 12h-2.55l-2.975 2.975a3.5 3.5 0 0 1-4.95 0L4.55 12H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2Zm-3 5a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"/>
+      </svg> Download ZIP</a>
+        </li>
+        <li className="mb-10 ms-6">
+            <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+                <svg className="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
+                </svg>
+            </span>
+            <h3 className="mb-1 text-lg font-semibold text-gray-900 dark:text-white">Flowbite Figma v1.3.0</h3>
+            <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released on December 7th, 2021</time>
+            <p className="text-base font-normal text-gray-500 dark:text-gray-400">All of the pages and components are first designed in Figma and we keep a parity between the two versions even as we update the project.</p>
+        </li>
+        <li className="ms-6">
+            <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+                <svg className="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
+                </svg>
+            </span>
+            <h3 className="mb-1 text-lg font-semibold text-gray-900 dark:text-white">Flowbite Library v1.2.2</h3>
+            <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released on December 2nd, 2021</time>
+            <p className="text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens of web components and interactive elements built on top of Tailwind CSS.</p>
+        </li>
+    </ol>
+
 
         </section>
         <section className="h-screen bg-yellow-400">
-
+          
         </section>
     </section>
    
@@ -65,70 +60,6 @@ export default function Home() {
 
 
 
-
-
-
-
-
-
-
- {/* <div className="absolute mr-6 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-<div className="relative ml-3">
-  <div>
-    <button
-      type="button"
-      className="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
-      id="user-menu-button"
-      aria-expanded={profileMenuOpen}
-      aria-haspopup="true"
-      onClick={toggleProfileMenu}
-    >
-      <span className="sr-only">Open user menu</span>
-      <img
-        className="h-8 w-8 rounded-full"
-        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-        alt="User"
-      />
-    </button>
-  </div>
-  <div
-    className={`absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none ${profileMenuOpen ? 'block' : 'hidden'}`}
-    role="menu"
-    aria-orientation="vertical"
-    aria-labelledby="user-menu-button"
-    tabIndex={-1}
-  >
-    <a
-      href="#"
-      className="block px-4 py-2 text-sm text-gray-700"
-      role="menuitem"
-      tabIndex={-1}
-      id="user-menu-item-0"
-    >
-      Your Profile
-    </a>
-    <a
-      href="#"
-      className="block px-4 py-2 text-sm text-gray-700"
-      role="menuitem"
-      tabIndex={-1}
-      id="user-menu-item-1"
-    >
-      Settings
-    </a>
-    <a
-      href="#"
-      className="block px-4 py-2 text-sm text-gray-700"
-      role="menuitem"
-      tabIndex={-1}
-      id="user-menu-item-2"
-    >
-      Sign out
-    </a>
-  </div>
-</div>
-</div>
- */}
 
 
 
