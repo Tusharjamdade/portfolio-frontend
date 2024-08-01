@@ -3,7 +3,7 @@ import {  signIn, useSession } from 'next-auth/react'
 import Link from 'next/link'
 import React from 'react'
 
-const page = () => {
+const Signup = () => {
     const session = useSession()
     console.log(session)
   return (
@@ -94,4 +94,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Signup

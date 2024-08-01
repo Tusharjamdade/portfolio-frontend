@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { signIn, useSession } from 'next-auth/react'
 import React from 'react'
 
-const signin = () => {
+const Signin =async () => {
     const session = useSession()
     console.log(session)
   return (
@@ -69,7 +69,7 @@ const signin = () => {
                                 Sign In
                             </span>
                         </button>
-                        <p className='text-black dark:text-white text-center mt-4'>Don't have an account?<Link className='text-gray-500 dark:text-gray-400' href={"/signup"}> Sign up</Link> </p>
+                        <p className='text-black dark:text-white text-center mt-4'>Don&apos;t have an account?<Link className='text-gray-500 dark:text-gray-400' href={"/signup"}> Sign up</Link> </p>
                         <p className="mt-6 text-xs text-gray-600 text-center dark:text-white">
                             I agree to abide by Cartesian Kinetics
                             <a href="#" className="border-b border-gray-500 border-dotted">
@@ -93,4 +93,4 @@ const signin = () => {
   )
 }
 
-export default signin
+export default Signin
