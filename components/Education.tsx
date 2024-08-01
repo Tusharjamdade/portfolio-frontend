@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Education() {
   return (
-    <section className="h-screen dark:bg-black bg-white pt-10 border-b">
+    <section className="min-h-screen dark:bg-black bg-white pt-10 border-b">
           <h3 className="dark:text-white dark:bg-black text-center text-2xl font-extrabold">TimeLine/Education</h3>
         <ol className="relative border-s border-gray-200 dark:border-gray-700 mx-20 pt-10 mt-10">                  
         <li className="mb-10 ms-6">            
