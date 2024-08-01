@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Skills() {
   return (
-    <section className="bg-white dark:bg-black min-h-screen">
+    <section className="bg-white dark:bg-black min-h-screen border-b">
     <div className="py-8 px-4  sm:py-16 lg:px-6 ml-4">
         <div className=" mb-8 lg:mb-16">
             <h2 className="mb-4  text-lg md:text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white text-center">FrameWorks/Programming Languages</h2>
