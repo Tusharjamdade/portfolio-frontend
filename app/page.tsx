@@ -113,7 +113,7 @@ export default function HomePage() {
         </div>
       )}
         </div>
-        <CommentReplies/>
+        {/* <CommentReplies/> */}
 
     </section>
    

@@ -23,17 +23,22 @@ export default function Home() {
             <div className="text-xl mt-10">
               -- Hello --
             </div>
-            <div className="text-2xl mt-3 font-bold">
+            <div className="text-2xl mt-4 font-bold">
             &nbsp;I&apos;m Tushar Jamdade 
             </div>
             <TypingEffect phrases={phrases} speed={100} />
             <div className="flex items-center justify-center text-black  dark:bg-black bg-white my-8">
               <div className="flex items-center justify-center gap-x-10 md:gap-x-16">
-                  <Link href="" className="h-10 w-10 text-4xl text-black dark:text-white" aria-label="Find us on Twitter" target="_blank" rel="noopener">
+                  <Link href="https://x.com/tusharnjamdade" className="h-10 w-10 text-4xl text-black dark:text-white" aria-label="Find us on Twitter" target="_blank" rel="noopener">
                   {/* <svg className="h-10 w-10 text-black dark:text-white"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg> */}
                   <i className="fa-brands fa-x-twitter"></i>
                   </Link>
-                  <Link href="" aria-label="Find us on LinkedIn"
+                  <Link className="h-10 w-10 text-4xl text-black dark:text-white" href="https://github.com/Tusharjamdade" aria-label="Find us on Facebook" target="_blank"
+                      rel="noopener">
+                      <i className="fa-brands fa-github"></i>
+
+                  </Link>
+                  <Link href="https://www.linkedin.com/in/tusharjamdade" aria-label="Find us on LinkedIn"
                       target="_blank" rel="noopener">
                       <svg className="h-10 w-10 text-black dark:text-white" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path
@@ -41,7 +46,7 @@ export default function Home() {
                               fill="currentColor"></path>
                       </svg>
                   </Link>
-                  <Link href="" aria-label="Find us on Instagram" target="_blank"
+                  <Link href="https://www.instagram.com/tushar_jamdade_" aria-label="Find us on Instagram" target="_blank"
                       rel="noopener">
                       <svg className="h-10 w-10 text-black dark:text-white" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path
@@ -49,15 +54,6 @@ export default function Home() {
                               fill="currentColor"></path>
                           <path
                               d="M24 11.67a12.33 12.33 0 1 0 0 24.66 12.33 12.33 0 0 0 0-24.66ZM24 32a8 8 0 1 1 0-16 8 8 0 0 1 0 16ZM39.7 11.18a2.88 2.88 0 1 1-5.76 0 2.88 2.88 0 0 1 5.75 0Z"
-                              fill="currentColor"></path>
-                      </svg>
-
-                  </Link>
-                  <Link href="" aria-label="Find us on Facebook" target="_blank"
-                      rel="noopener">
-                      <svg className="h-10 w-10 text-black dark:text-white" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path
-                              d="M48 24a24 24 0 1 0-27.75 23.7V30.95h-6.1V24h6.1v-5.29c0-6.01 3.58-9.34 9.07-9.34 2.62 0 5.37.47 5.37.47v5.91h-3.03c-2.98 0-3.91 1.85-3.91 3.75V24h6.66l-1.07 6.94h-5.59V47.7A24 24 0 0 0 48 24Z"
                               fill="currentColor"></path>
                       </svg>
 
