@@ -73,7 +73,7 @@ export default function HomePage() {
             Chat with <span className="text-sky-300">Tushar.AI</span>
           </div>
 
-          <div className="pr-4 h-[474px] overflow-y-auto dark:text-white text-black mb-4">
+          <div className="pr-4 h-5/6 overflow-y-auto dark:text-white text-black">
             {messages.map((msg, index) => (
               <div key={index} className={`flex gap-3 my-4 text-sm ${msg.sender === 'You' ? 'text-right' : ''}`}>
                 <span className="relative flex shrink-0 overflow-hidden rounded-full w-8 h-8">
