@@ -1,52 +1,62 @@
-"use client"
-import CommentReplies from "@/components/CommentReplies";
+"use client";
 import CommentSection from "@/components/CommentSection";
-import Dialogue from "@/components/Dialogue";
 import Education from "@/components/Education";
 import Home from "@/components/Home";
-import Navbar from "@/components/Navbar";
 import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
-import Image from "next/image";
+import axios from "axios";
 import { useState } from "react";
 
 export default function HomePage() {
   const [isOpen, setIsOpen] = useState(false);
+  const [inputValue, setInputValue] = useState('');
   const [messages, setMessages] = useState([
     { text: 'Hi, how can I help you today?', sender: 'AI' },
   ]);
-  const [inputValue, setInputValue] = useState('');
 
   const handleToggle = () => setIsOpen(!isOpen);
 
-  const handleInputChange = (e:any) => setInputValue(e.target.value);
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setInputValue(e.target.value);
+  };
 
-  const handleSendMessage = (e:any) => {
-    e.preventDefault();
+  const handleSendMessage = async () => {
     if (inputValue.trim()) {
+      // Add user's message
       setMessages([...messages, { text: inputValue, sender: 'You' }]);
       setInputValue('');
-      // Simulate AI response
-      setMessages([...messages, { text: inputValue, sender: 'You' }, { text: 'Sorry, I couldn\'t find any information in the documentation about that.', sender: 'AI' }]);
+
+      try {
+        // Send the message to the API
+        const response = await axios.post("http://localhost:3000/api", {
+          search: inputValue
+        });
+        console.log(response)
+        // Add API response to messages
+        setMessages([...messages, { text: inputValue, sender: 'You' }, { text: response.data.text, sender: 'AI' }]);
+      } catch (error) {
+        console.error('Error sending message:', error);
+      }
     }
   };
 
   return (
-    <section className="">
-        <Home/>
-        <Projects/>
-        <Education/>
-        <Skills/>
-        <CommentSection/>
-        <div>
+    <section>
+      {/* Your other components */}
+      <Home/>
+      <Projects/>
+      <Education/>
+      <Skills/>
+      <CommentSection/>
+      
       <button
-        className="fixed bottom-4 right-4 inline-flex items-center justify-center text-sm font-medium disabled:pointer-events-none disabled:opacity-50 border rounded-full w-16 h-16 bg-white m-0 cursor-pointer border-black dark:border-white bg-none p-0 normal-case leading-5 hover:text-gray-900 dark:bg-black dark:text-white "
+        className="fixed bottom-4 right-4 inline-flex items-center justify-center text-sm font-medium disabled:pointer-events-none disabled:opacity-50 border rounded-full w-16 h-16 bg-white m-0 cursor-pointer border-black dark:border-white bg-none p-0 normal-case leading-5 hover:text-gray-900 dark:bg-black dark:text-white"
         type="button"
         aria-haspopup="dialog"
         aria-expanded={isOpen}
         onClick={handleToggle}
       >
-        <svg  xmlns="http://www.w3.org/2000/svg" width="30" height="40" viewBox="0 0 24 24" fill="none"
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="40" viewBox="0 0 24 24" fill="none"
           stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
           className="text-black block dark:text-white border-black align-middle">
           <path d="m3 21 1.9-5.7a8.5 8.5 0 1 1 3.8 3.8z" />
@@ -57,19 +67,14 @@ export default function HomePage() {
         <div
           style={{ boxShadow: "0 0 #0000, 0 0 #0000, 0 1px 2px 0 rgb(0 0 0 / 0.05)" }}
           className="fixed bottom-[calc(4rem+1.5rem)] right-0 mr-8 bg-white p-6 rounded-lg border border-[#e5e7eb] h-4/5 w-5/6 md:w-96 dark:bg-black text-white"
-
         >
           <div className="text-center dark:text-white text-black">
-            Chat with <span className="text-sky-300	">Tushar</span>
+            Chat with <span className="text-sky-300">Tushar.AI</span>
           </div>
-          {/* <div className="flex flex-col space-y-1.5 pb-6">
-            <h2 className="font-semibold text-lg tracking-tight">Chatbot</h2>
-            <p className="text-sm text-[#6b7280] leading-3">Powered by Mendable and Vercel</p>
-          </div> */}
 
-          {/* <div className="pr-4 h-[474px] overflow-y-auto">
+          <div className="pr-4 h-[474px] overflow-y-auto dark:text-white text-black">
             {messages.map((msg, index) => (
-              <div key={index} className={`flex gap-3 my-4 text-gray-600 text-sm ${msg.sender === 'You' ? 'text-right' : ''}`}>
+              <div key={index} className={`flex gap-3 my-4 text-sm ${msg.sender === 'You' ? 'text-right' : ''}`}>
                 <span className="relative flex shrink-0 overflow-hidden rounded-full w-8 h-8">
                   <div className="rounded-full bg-gray-100 border p-1">
                     {msg.sender === 'You' ? (
@@ -85,44 +90,29 @@ export default function HomePage() {
                   </div>
                 </span>
                 <p className="leading-relaxed">
-                  <span className="block font-bold text-gray-700">{msg.sender} </span>{msg.text}
+                  {msg.text}
                 </p>
               </div>
             ))}
-          </div> */}
-          <div className="bg-red-500 absolute w-80 bottom-16">
-            <button className="block">Projects</button>
-            <button className="block">Intro</button>
-            <button className="block">Education</button>
           </div>
-          
-          <div className="flex items-center absolute bottom-4 w-5/6 ">
-              <input
-                className="h-10 w-full rounded-md border border-[#e5e7eb] px-3 text-sm placeholder-[#6b7280] focus:outline-none focus:ring-2 focus:ring-[#9ca3af] disabled:cursor-not-allowed disabled:opacity-50 text-[#030712] focus-visible:ring-offset-2"
-                placeholder="Type your message"
-                value={inputValue}
-                onChange={handleInputChange}
-              />
-              <button
-                type="submit"
-                className="ml-2  text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-              >
-                Send
-              </button>
+
+          <div className="flex items-center absolute bottom-4 w-5/6">
+            <input
+              className="h-10 w-full rounded-md border border-[#e5e7eb] px-3 text-sm placeholder-[#6b7280] focus:outline-none focus:ring-2 focus:ring-[#9ca3af] disabled:cursor-not-allowed disabled:opacity-50 text-[#030712] focus-visible:ring-offset-2"
+              placeholder="Type your message"
+              value={inputValue}
+              onChange={handleInputChange}
+            />
+            <button
+              type="button"
+              onClick={handleSendMessage}
+              className="ml-2 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            >
+              Send
+            </button>
           </div>
         </div>
       )}
-        </div>
-        {/* <CommentReplies/> */}
-
     </section>
-   
   );
 }
-
-
-
-
-
-
-
