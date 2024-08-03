@@ -16,7 +16,7 @@ export default function HomePage() {
 
   const handleToggle = () => setIsOpen(!isOpen);
  
-  
+
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setInputValue(e.target.value);
   };
@@ -29,7 +29,7 @@ export default function HomePage() {
 
       try {
         // Send the message to the API
-        const response = await axios.post("http://tusharjamdade.vercel.app/api", {
+        const response = await axios.post("http://localhost:3000/api", {
           search: inputValue
         });
         console.log(response)
