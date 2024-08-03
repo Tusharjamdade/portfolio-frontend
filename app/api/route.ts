@@ -38,7 +38,7 @@ export  async function POST(req:NextRequest){
         topK:16
     }
     // Access your API key as an environment variable (see "Set up your API key" above)
-    const genAI = new GoogleGenerativeAI(GOOGLE_KEY);
+    const genAI = new GoogleGenerativeAI(process.env.GOOGLE_KEY || '');
     
     const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash"});
     async function run() {
