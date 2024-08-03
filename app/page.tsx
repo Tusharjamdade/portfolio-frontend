@@ -15,7 +15,8 @@ export default function HomePage() {
   ]);
 
   const handleToggle = () => setIsOpen(!isOpen);
-
+ 
+  
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setInputValue(e.target.value);
   };
