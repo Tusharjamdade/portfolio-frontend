@@ -42,7 +42,7 @@ export  async function POST(req:NextRequest){
     
     const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash"});
     async function run() {
-        const prompt = "from now your name is Tushar,now return "+body.search
+        const prompt = " "+body.search
       
         const result = await model.generateContent(prompt);
         const response = result.response;
