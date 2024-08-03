@@ -29,7 +29,7 @@ export default function HomePage() {
 
       try {
         // Send the message to the API
-        const response = await axios.post("http://tusharjamdade.vercel.app/api", {
+        const response = await axios.post("https://portfolio-backend.tusharnjamdade.workers.dev/api", {
           search: inputValue
         });
         console.log(response)
