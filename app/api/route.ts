@@ -24,9 +24,8 @@
 // }
 // AIzaSyAPDV0ILVEzR5n3oIMgDlJu43-BHbYu7HU
 
-import { GOOGLE_KEY } from "@/env/env";
 import { GoogleGenerativeAI } from "@google/generative-ai"
-import { NextRequest, NextResponse } from "next/server";
+import { NextRequest } from "next/server";
 
 export  async function POST(req:NextRequest){
     const body = await req.json()
