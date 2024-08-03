@@ -1,4 +1,5 @@
 "use client"
+import CommentReplies from "@/components/CommentReplies";
 import CommentSection from "@/components/CommentSection";
 import Dialogue from "@/components/Dialogue";
 import Education from "@/components/Education";
@@ -58,15 +59,15 @@ export default function HomePage() {
           className="fixed bottom-[calc(4rem+1.5rem)] right-0 mr-8 bg-white p-6 rounded-lg border border-[#e5e7eb] h-4/5 w-5/6 md:w-96 dark:bg-black text-white"
 
         >
-          <div className="text-center">
-            Chat with <span className="text-sky-300	">Tusahr</span>
+          <div className="text-center dark:text-white text-black">
+            Chat with <span className="text-sky-300	">Tushar</span>
           </div>
           {/* <div className="flex flex-col space-y-1.5 pb-6">
             <h2 className="font-semibold text-lg tracking-tight">Chatbot</h2>
             <p className="text-sm text-[#6b7280] leading-3">Powered by Mendable and Vercel</p>
-          </div>
+          </div> */}
 
-          <div className="pr-4 h-[474px] overflow-y-auto">
+          {/* <div className="pr-4 h-[474px] overflow-y-auto">
             {messages.map((msg, index) => (
               <div key={index} className={`flex gap-3 my-4 text-gray-600 text-sm ${msg.sender === 'You' ? 'text-right' : ''}`}>
                 <span className="relative flex shrink-0 overflow-hidden rounded-full w-8 h-8">
@@ -89,9 +90,13 @@ export default function HomePage() {
               </div>
             ))}
           </div> */}
+          <div className="bg-red-500 absolute w-80 bottom-16">
+            <button className="block">Projects</button>
+            <button className="block">Intro</button>
+            <button className="block">Education</button>
+          </div>
           
           <div className="flex items-center absolute bottom-4 w-5/6 ">
-            {/* <form className="flex items-center justify-center w-full space-x-2" onSubmit={handleSendMessage}> */}
               <input
                 className="h-10 w-full rounded-md border border-[#e5e7eb] px-3 text-sm placeholder-[#6b7280] focus:outline-none focus:ring-2 focus:ring-[#9ca3af] disabled:cursor-not-allowed disabled:opacity-50 text-[#030712] focus-visible:ring-offset-2"
                 placeholder="Type your message"
@@ -104,11 +109,11 @@ export default function HomePage() {
               >
                 Send
               </button>
-            {/* </form> */}
           </div>
         </div>
       )}
-    </div>
+        </div>
+        <CommentReplies/>
 
     </section>
    
