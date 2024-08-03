@@ -4,6 +4,7 @@ import Education from "@/components/Education";
 import Home from "@/components/Home";
 import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
+import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import axios from "axios";
 import { useState } from "react";
 
@@ -13,6 +14,15 @@ export default function HomePage() {
   const [messages, setMessages] = useState([
     { text: 'Hi, how can I help you today?', sender: 'AI' },
   ]);
+  // const TextGenerateEffect = () => {
+  //   return (
+  //     <div className={className}>
+  //       {/* Your text generation logic here */}
+  //       {words}
+  //     </div>
+  //   );
+  // };
+  
 
   const handleToggle = () => setIsOpen(!isOpen);
  
@@ -90,8 +100,15 @@ export default function HomePage() {
                     )}
                   </div>
                 </span>
-                <p className="leading-relaxed">
-                  {msg.text}
+                <p className="leading-relaxed text-xs">
+                <div className="text-sm">
+                <TextGenerateEffect 
+                className="text-lg"
+                  words={msg.text} 
+                  duration={1} 
+                />
+              </div>
+
                 </p>
               </div>
             ))}
