@@ -16,7 +16,7 @@ export default function Home() {
     <section className="min-h-screen bg-white dark:bg-black dark:text-white border-b" id='home'>
       <div className="grid grid-cols-1 md:grid-cols-2">
         <div className="flex justify-center items-center mt-16 md:mt-0 border-spacing-2 border-black">
-          <Image width={500} height={500} className="h-52 w-52 rounded-full md:h-80 md:w-80 border border-spacing-2 border-black dark:border-white" src="/img.jpg" alt="Rounded avatar"/>
+          <Image width={500} height={500} className="h-52 w-52 rounded-full md:h-80 md:w-80 border border-spacing-2 border-black dark:border-white" src="/ai.jpg" alt="Rounded avatar"/>
         </div>
         <div className="flex justify-center items-center font-semibold">
           <div className="mt-6 mx-10 md:mt-0">
