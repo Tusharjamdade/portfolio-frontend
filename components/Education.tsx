@@ -29,7 +29,7 @@ export default function Education() {
             </span>
             <h3 className="mb-1 text-lg font-semibold text-gray-900 dark:text-white">B.Tech ~ Bansilal Ramnath Agarwal Charitable Trust&apos;s Vishwakarma Institute Of Information Technology<span className="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 ms-3">Latest</span></h3>
             <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2024 - 2027</time>
-            <p className="text-base font-normal text-gray-500 dark:text-gray-400">Pursuing...</p>
+            <p className="text-base font-normal text-gray-500 dark:text-gray-400">I am currently pursuing Computer Science and Engineering (Data Science) at VIIT College, Pune.</p>
         </li>
     </ol>
 
