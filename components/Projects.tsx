@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 export default function Projects() {
@@ -6,6 +7,7 @@ export default function Projects() {
       <div className=" text-black dark:bg-black dark:text-white mt-10 text-2xl font-extrabold text-center">Projects</div>
     <div className="flex justify-evenly items-center h-full flex-wrap">
       {/* <div> */}
+      <Link href={"https://github.com/Tusharjamdade/portfolio-frontend"}>
     <div className="border max-w-sm rounded-lg overflow-hidden shadow-lg text-black dark:bg-black dark:text-white mt-10 mx-2 mb-4">
       <img className="w-full" src="/portfolio.png" alt="Sunset in the mountains"/>
       <div className="px-6 py-4">
@@ -19,6 +21,7 @@ export default function Projects() {
         <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Hono</span>
       </div>
     </div>
+    </Link>
 
 
     {/* <div className="border max-w-sm rounded-lg overflow-hidden shadow-lg text-black dark:bg-black dark:text-white mt-10 mx-2 mb-4">
@@ -35,7 +38,7 @@ export default function Projects() {
         <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#TypeScript</span>
       </div>
     </div> */}
-
+      <Link href={"https://github.com/Tusharjamdade/TaskBidder"}>
     <div className="border max-w-sm rounded-lg overflow-hidden shadow-lg text-black dark:bg-black dark:text-white mt-10 mx-2 mb-4">
       <img className="w-full" src="/Task.png" alt="Sunset in the mountains"/>
       <div className="px-6 py-4">
@@ -49,8 +52,9 @@ export default function Projects() {
         <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Tailwind</span>
       </div>
     </div>
+    </Link>
 
-
+      <Link href={"https://github.com/Tusharjamdade/Medium"}>
     <div className="border max-w-sm rounded-lg overflow-hidden shadow-lg text-black dark:bg-black dark:text-white mt-10 mx-2 mb-4">
       <img className="w-full" src="/bloging.png" alt="Sunset in the mountains"/>
       <div className="px-6 py-4">
@@ -64,6 +68,7 @@ export default function Projects() {
         <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#TypeScript</span>
       </div>
     </div>
+    </Link>
 
     
 
