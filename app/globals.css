@@ -67,3 +67,8 @@
     @apply bg-background text-foreground;
   }
 }
+@property --num {
+  syntax: '<integer>';
+  initial-value: 0;
+  inherits: false;
+}

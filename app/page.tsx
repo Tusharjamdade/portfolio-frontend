@@ -7,7 +7,7 @@ import Skills from "@/components/Skills";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import axios from "axios";
 import { useState } from "react";
-
+import {AnimatedCounter} from "@/components/component/animated-counter";
 export default function HomePage() {
   const [isOpen, setIsOpen] = useState(false);
   const [inputValue, setInputValue] = useState('');
@@ -58,6 +58,7 @@ export default function HomePage() {
       <Projects/>
       <Education/>
       <Skills/>
+      <AnimatedCounter  />
       <CommentSection/>
       
       <button
@@ -134,3 +135,4 @@ export default function HomePage() {
     </section>
   );
 }
+
