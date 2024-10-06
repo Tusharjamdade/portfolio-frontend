@@ -28,7 +28,26 @@ export default function Projects() {
              
           </div>
         </Link>
-
+          {/* Movie Booking */}
+        <Link href={"https://github.com/Tusharjamdade/popcornseats.git"}>
+          <div className="border max-w-sm rounded-lg overflow-hidden shadow-lg text-black dark:bg-black dark:text-white mt-10 mx-2 mb-4 hover:shadow-xl transition-shadow duration-300">
+            <img className="w-full" src="/movie.png" alt="Blogging Website" />
+            <div className="px-6 py-4">
+              <div className="font-bold text-xl mb-2">Popcorn Seats</div>
+              <p className="text-black text-base dark:text-white text-justify">
+              PopcornSeats is a user-friendly platform designed for booking movie shows effortlessly. It integrates Razorpay for secure and seamless payment processing, ensuring a smooth transaction experience for users. 
+              </p>
+            </div>
+            <div className="px-6 pt-4 pb-2">
+              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Next.js</span>
+              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#TypeScript</span>
+              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#RazorPay</span>
+            </div>
+            <div className="px-6 pb-4">
+              <a href="https://github.com/Tusharjamdade/popcornseats.git" target="_blank" rel="noopener noreferrer" className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors">View on GitHub</a>
+            </div>
+          </div>
+        </Link>
         {/* Project Card: TaskBidder */}
         <Link href={"https://github.com/Tusharjamdade/TaskBidder"}>
           <div className="border max-w-sm rounded-lg overflow-hidden shadow-lg text-black dark:bg-black dark:text-white mt-10 mx-2 mb-4 hover:shadow-xl transition-shadow duration-300">
@@ -70,26 +89,7 @@ export default function Projects() {
             </div>
           </div>
         </Link>
-        {/* Movie Booking */}
-        <Link href={"https://github.com/Tusharjamdade/popcornseats.git"}>
-          <div className="border max-w-sm rounded-lg overflow-hidden shadow-lg text-black dark:bg-black dark:text-white mt-10 mx-2 mb-4 hover:shadow-xl transition-shadow duration-300">
-            <img className="w-full" src="/movie.png" alt="Blogging Website" />
-            <div className="px-6 py-4">
-              <div className="font-bold text-xl mb-2">Popcorn Seats</div>
-              <p className="text-black text-base dark:text-white text-justify">
-              PopcornSeats is a user-friendly platform designed for booking movie shows effortlessly. It integrates Razorpay for secure and seamless payment processing, ensuring a smooth transaction experience for users. 
-              </p>
-            </div>
-            <div className="px-6 pt-4 pb-2">
-              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Next.js</span>
-              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#TypeScript</span>
-              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#RazorPay</span>
-            </div>
-            <div className="px-6 pb-4">
-              <a href="https://github.com/Tusharjamdade/popcornseats.git" target="_blank" rel="noopener noreferrer" className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors">View on GitHub</a>
-            </div>
-          </div>
-        </Link>
+        
 
         {/* Project Card: Recommendo.ai */}
         <Link href={"https://github.com/Tusharjamdade/recommendo.ai"}>
