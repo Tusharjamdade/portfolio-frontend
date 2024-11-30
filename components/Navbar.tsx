@@ -32,7 +32,7 @@ export default function Navbar() {
       const url = window.URL.createObjectURL(blob);
       const link = document.createElement('a');
       link.href = url;
-      link.setAttribute('download', 'Resume.pdf'); // Filename for the download
+      link.setAttribute('download', 'Tushar_Jamdade_Resume.pdf'); // Filename for the download
       document.body.appendChild(link);
       link.click();
       link.remove();
