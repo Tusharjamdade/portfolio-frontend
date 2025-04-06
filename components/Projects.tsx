@@ -38,7 +38,7 @@ export default function Projects() {
             <div className="px-6 py-4">
               <div className="font-bold text-xl mb-2">NASA Explorer</div>
               <p className="text-black text-base dark:text-white text-justify">
-                NASA Explorer is a web platform powered by NASA's API, allowing users to explore astronomy images, celestial events, and space data. It includes a Global Warming Visualizer and an asteroid threat prediction model using Scikit-learn.
+                NASA Explorer is a web platform powered by NASA&apos;s API, allowing users to explore astronomy images, celestial events, and space data. It includes a Global Warming Visualizer and an asteroid threat prediction model using Scikit-learn.
               </p>
             </div>
             <div className="px-6 pt-4 pb-2">
