@@ -21,7 +21,7 @@ export default function Education() {
             </span>
             <h3 className="mb-1 text-lg font-semibold text-gray-900 dark:text-white">Diploma ~JSPMs RSCOE, Tathawade, Pune</h3>
             <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">June, 2024</time>
-            <p className="text-base font-normal text-gray-500 dark:text-gray-400">I completed my diploma from JSPM Rajarshi Shahu College of Engineering, Tathawade, Pune, with a grade of 88.40%.</p>
+            <p className="text-base font-normal text-gray-500 dark:text-gray-400">I completed my diploma from JSPM Rajarshi Shahu College of Engineering, Tathawade, Pune, with a grade of 91.40%.</p>
         </li>
         <li className="ms-6">
         <span className="absolute flex items-center justify-center w-6 h-6 bg-white rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-black">

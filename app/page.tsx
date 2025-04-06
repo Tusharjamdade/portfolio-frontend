@@ -81,7 +81,7 @@ export default function HomePage() {
           className="fixed bottom-[calc(4rem+1.5rem)] right-0 mr-8 bg-white p-6 rounded-lg border border-[#e5e7eb] h-4/5 w-5/6 md:w-96 dark:bg-black text-white"
         >
           <div className="text-center dark:text-white text-black">
-            Chat with <span className="text-sky-300">Tushar.AI</span>
+            Chat with <span className="text-sky-300">tushar.ai</span>
           </div>
 
           <div className="pr-4 h-5/6 overflow-y-auto dark:text-white text-black">
