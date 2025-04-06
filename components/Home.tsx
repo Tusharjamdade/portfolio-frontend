@@ -23,7 +23,7 @@ export default function Home() {
   width={500}
   height={500}
   className="h-52 w-52 md:h-80 md:w-80 rounded-full border border-black dark:border-white object-cover object-center"
-  src="/photo1.jpg"
+  src="/photo3.jpg"
   alt="Rounded avatar"
 />
 
