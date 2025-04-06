@@ -26,7 +26,7 @@ export default function Navbar() {
 
   const handleDownload =  () => {
     try {
-      axios.get('https://portfolio-backend.tusharnjamdade.workers.dev/downloadpdf/10', {
+      axios.get('https://portfolio-backend.tusharnjamdade.workers.dev/downloadpdf/22', {
         responseType: 'blob', // Important for handling binary data
       }).then((response)=>{ const blob = new Blob([response.data], { type: 'application/pdf' });
       const url = window.URL.createObjectURL(blob);

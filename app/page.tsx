@@ -106,7 +106,7 @@ export default function HomePage() {
                 <TextGenerateEffect 
                 className="text-lg"
                   words={msg.text} 
-                  duration={1} 
+                  duration={0.3} 
                 />
               </div>
 
@@ -121,6 +121,12 @@ export default function HomePage() {
               placeholder="Type your message"
               value={inputValue}
               onChange={handleInputChange}
+              onKeyDown={(e) => {
+                if (e.key === "Enter") {
+                  e.preventDefault();
+                  handleSendMessage();
+                }
+              }}
             />
             <button
               type="button"

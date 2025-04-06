@@ -9,7 +9,9 @@ export default function Home() {
     'Next.js | React.js ',
     'Node.js | Express.js ',
     'Full-Stack Web Development',
-    'MongoDB | PostgreSQL'
+    'MongoDB | PostgreSQL | Firebase',
+    'Machine Learning',
+    'Scikit-learn | TensorFlow'
   ];
 
   return (
@@ -26,7 +28,7 @@ export default function Home() {
             <div className="text-2xl mt-4 font-bold">
             &nbsp;I&apos;m Tushar Jamdade 
             </div>
-            <TypingEffect phrases={phrases} speed={100} />
+            <TypingEffect phrases={phrases} speed={50} />
             <div className="flex items-center justify-center text-black  dark:bg-black bg-white my-8">
               <div className="flex items-center justify-center gap-x-10 md:gap-x-16">
                   <Link href="https://x.com/tusharnjamdade" className="h-10 w-10 text-4xl text-black dark:text-white" aria-label="Find us on Twitter" target="_blank" rel="noopener">
