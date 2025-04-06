@@ -158,12 +158,12 @@ export default function Projects() {
 
 
         {/* Project Card: Recommendo.ai */}
-        <Link href={"https://github.com/Tusharjamdade/attendity"}>
+        <Link href={"https://github.com/Tusharjamdade/VIIT-Attendify"}>
           <div className="border max-w-sm rounded-lg overflow-hidden shadow-lg text-black dark:bg-black dark:text-white mt-10 mx-2 mb-4 hover:shadow-xl transition-shadow duration-300">
           <div className="w-70 h-48 overflow-hidden flex items-center justify-center rounded-md">
         <img
           src="/attendity1.jpg"
-          alt="Recommendo.ai"
+          alt="Attendify"
           className="h-full object-contain"
         />
       </div>
@@ -178,7 +178,7 @@ export default function Projects() {
               <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#RBAC</span>
             </div>
             <div className="px-6 pb-4">
-              <a href="https://github.com/Tusharjamdade/recommendo.ai" target="_blank" rel="noopener noreferrer" className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors">View on GitHub</a>
+              <a href="https://github.com/Tusharjamdade/VIIT-Attendify" target="_blank" rel="noopener noreferrer" className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors">View on GitHub</a>
             </div>
           </div>
         </Link> 
