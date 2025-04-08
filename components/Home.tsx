@@ -35,7 +35,7 @@ export default function Home() {
               &nbsp;I&apos;m Tushar Jamdade
             </div>
 
-            <TypingEffect phrases={phrases} speed={20} />
+            <TypingEffect phrases={phrases} speed={50} />
 
             {/* Social Icons */}
             <div className="flex items-center justify-center text-black dark:text-white my-8">
