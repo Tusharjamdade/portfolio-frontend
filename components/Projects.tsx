@@ -10,7 +10,7 @@ export default function Projects() {
         {/* Project Card: Portfolio Website */}
         <Link href={"https://github.com/Tusharjamdade/portfolio-frontend"}>
           <div className="border max-w-sm rounded-lg overflow-hidden shadow-lg text-black dark:bg-black dark:text-white mt-10 mx-2 mb-4 hover:shadow-xl transition-shadow duration-300">
-            <img className="w-full" src="/portfolio.png" alt="Portfolio Website" />
+            <img className="w-full" src="/image.png" alt="Portfolio Website" />
             <div className="px-6 py-4">
               <div className="font-bold text-xl mb-2">Portfolio Website</div>
               <p className="text-black text-base dark:text-white text-justify">
